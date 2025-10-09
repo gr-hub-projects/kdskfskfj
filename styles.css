@@ -1,0 +1,381 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY GLOBAL */
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f7f7f7; /* Fondo claro */
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ENCABEZADO HOME y título principal */
+.home-container h1,
+.main-title {
+  text-align: center;
+  color: #333;
+}
+
+/* Botones de la parte superior (Home) */
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Botón grande en Home */
+.big-home-button {
+  width: 96.5%;   /* Un poco menos ancho que antes */
+  height: 120px;  /* 120px de alto */
+  font-size: 1.5rem; /* Texto tamaño 1.5rem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.big-home-button .icon {
+  font-size: 1.6rem; /* Ícono de 1.6rem */
+}
+
+/* Botones base */
+.btn-primary,
+.btn-secondary {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-primary {
+  background-color: #F17121; /* Naranja */
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #eee;
+  color: #333;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #999;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  text-transform: uppercase;
+}
+
+/* Estilo de la tabla */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: #FFF;
+}
+.table-container td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.table-container th {
+  background-color: #000000;
+  color: #fdfdfd; /* Naranja */
+  font-weight: bold;
+}
+
+/* Indicador de página */
+.auto-page-info {
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+  font-size: 0.85rem;
+}
+
+/* CONTENEDOR HOME vs. SEARCH */
+#search-container {
+  display: none;
+}
+
+.search-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn-back {
+  background: none;
+  border: 2px solid #F17121;
+  color: #F17121;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.search-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #F17121;
+}
+
+/* Caja de búsqueda en SEARCH */
+.search-box {
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 220px;
+}
+
+/* Botón de búsqueda en SEARCH (normal) */
+.btn-search {
+  background-color: #F17121;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Leyenda debajo del botón */
+.search-legend {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 1.4;
+}
+
+/* Resultado de la búsqueda */
+.search-result {
+  text-align: center;
+  margin-top: 20px;
+  min-height: 50px;
+}
+
+/* Texto de error en negro */
+.error-text {
+  color: #000;
+  font-weight: normal;
+}
+
+/* Tabla para el resultado de la búsqueda */
+/*.transfer-result-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 6px;
+  margin: 10px auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 944px;
+  border: 2px solid #D0DFDF;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}*/
+
+.transfer-result-table th,
+.transfer-result-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.transfer-result-table th {
+  background-color: #000000;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Ícono genérico */
+.icon {
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* QR container para error */
+.qr-container {
+  text-align: center;
+  margin-top: 20px; /* Más separación del texto */
+}
+
+.qr-container img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+.logo_nexus_bdr {
+  width: 100%;
+  max-width: 944px;
+}
+.titulo_result {
+  color: #FFF;
+  font-size: 1.2rem; 
+}
+.bktable {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background: #000000;
+  margin: 0 auto;
+  width: 97%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.bktableqr {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 944px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.bktableqrresultados {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 97%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+/* Contenedor título + idioma */
+.title-lang-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Selector de idioma */
+.language-selector {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.language-selector select {
+  margin-left: 6px;
+  padding: 4px 6px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+/* Contenedor título + idioma */
+.title-lang-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 97%; /* igual que la tabla */
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* Botones de idioma */
+.language-buttons {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 0%;
+}
+
+.lang-btn {
+  background-color: #eee;
+  color: #333;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.lang-btn:hover {
+  background-color: #f17121;
+  color: #fff;
+}
+
+.lang-btn.active {
+  background-color: #f17121;
+  color: #fff;
+}
+/*.result {
+  background: transparent;
+    border: none;
+    box-shadow: none;
+}*/

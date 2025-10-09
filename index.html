@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Transfers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- CONTENEDOR HOME -->
+  <div id="home-container" class="home-container">
+    <div class="top-buttons">
+      <button id="search-transfer-btn" class="btn-secondary big-home-button">
+        <span class="icon">🔎</span> <span data-i18n="search_booking">Search my booking number</span>
+      </button>
+      <button id="adventure-btn" class="btn-primary hide">
+        <span class="icon">✈️</span> <span data-i18n="find_adventure">Find your next adventure</span>
+      </button>
+    </div>
+
+    <!-- Título con botones de idioma -->
+    <div class="title-lang-wrapper">
+      <h2 id="main-title" class="main-title" data-i18n="title_today">
+        Today’s pick-up airport transfers
+      </h2>
+      <div class="language-buttons">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+
+    <div id="table-container" class="table-container"></div>
+
+    <footer>
+      <img class="logo_nexus_bdr" src="https://miguelgrhub.github.io/Dyspl/Logo_Dysp.png" alt="Logo Nexus">
+    </footer>
+  </div>
+
+  <!-- CONTENEDOR SEARCH -->
+  <div id="search-container" class="search-container">
+    <button id="back-home-btn" class="btn-back" data-i18n="back">← Back</button>
+    <h2 data-i18n="find_transfer">Find my transfer</h2>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Enter your booking number"
+        aria-label="Search by booking number"
+        data-i18n-placeholder="placeholder_booking"
+      />
+      <button id="search-button" class="btn-search">
+        <span class="icon">🔍</span>
+      </button>
+    </div>
+
+    <p id="search-legend" class="search-legend" data-i18n="legend_text">
+      If you have any questions about your pickup transfer time, please reach out...
+    </p>
+
+    <div id="search-result" class="table-container result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

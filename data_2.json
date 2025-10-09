@@ -1,0 +1,10 @@
+{
+  "templates": {
+    "type": "JSON",
+    "content": [],
+    "source": {
+      "data_source": "Google Sheets (Private)",
+      "update_frequency": "Automated"
+    }
+  }
+}
